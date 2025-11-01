@@ -34,13 +34,13 @@ export default function Navigation() {
           </button>
         </div>
         <div className="hidden lg:flex lg:gap-x-8">
-          <Link href="/" className="text-sm font-semibold leading-6 text-gray-900 hover:text-purple-600 dark:text-gray-100 dark:hover:text-purple-400">
-            Home
+          <Link href="#audio" className="text-sm font-semibold leading-6 text-gray-900 hover:text-purple-600 dark:text-gray-100 dark:hover:text-purple-400">
+            Create Audio
           </Link>
-          <Link href="/about" className="text-sm font-semibold leading-6 text-gray-900 hover:text-purple-600 dark:text-gray-100 dark:hover:text-purple-400">
-            About 432 Hz
+          <Link href="#about" className="text-sm font-semibold leading-6 text-gray-900 hover:text-purple-600 dark:text-gray-100 dark:hover:text-purple-400">
+            About
           </Link>
-          <Link href="/faq" className="text-sm font-semibold leading-6 text-gray-900 hover:text-purple-600 dark:text-gray-100 dark:hover:text-purple-400">
+          <Link href="#faq" className="text-sm font-semibold leading-6 text-gray-900 hover:text-purple-600 dark:text-gray-100 dark:hover:text-purple-400">
             FAQ
           </Link>
         </div>
@@ -50,21 +50,21 @@ export default function Navigation() {
         <div className="lg:hidden">
           <div className="space-y-1 px-4 pb-3 pt-2">
             <Link
-              href="/"
+              href="#audio"
               className="block rounded-md px-3 py-2 text-base font-medium text-gray-900 hover:bg-gray-50 dark:text-gray-100 dark:hover:bg-gray-800"
               onClick={() => setMobileMenuOpen(false)}
             >
-              Home
+              Create Audio
             </Link>
             <Link
-              href="/about"
+              href="#about"
               className="block rounded-md px-3 py-2 text-base font-medium text-gray-900 hover:bg-gray-50 dark:text-gray-100 dark:hover:bg-gray-800"
               onClick={() => setMobileMenuOpen(false)}
             >
-              About 432 Hz
+              About
             </Link>
             <Link
-              href="/faq"
+              href="#faq"
               className="block rounded-md px-3 py-2 text-base font-medium text-gray-900 hover:bg-gray-50 dark:text-gray-100 dark:hover:bg-gray-800"
               onClick={() => setMobileMenuOpen(false)}
             >

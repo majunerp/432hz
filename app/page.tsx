@@ -11,6 +11,33 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
+  const faqs = [
+    {
+      q: 'What is 432 Hz sound frequency?',
+      a: '432 Hz is an alternative musical tuning where the note A vibrates at 432 cycles per second, compared to the standard 440 Hz. Many believe 432 Hz sound frequency is more harmonious with natural patterns.'
+    },
+    {
+      q: 'How do I create 432 Hz sound?',
+      a: 'Select your preferred preset, choose duration (5-60 minutes), click Play to create 432 Hz sound instantly, then download in WAV or MP3 format. All creation happens in your browser.'
+    },
+    {
+      q: 'What are binaural beats at 432 Hz?',
+      a: 'Binaural beats combine 432 Hz sound frequency with Delta, Theta, Alpha, or Beta frequencies. Using headphones, each ear receives a different frequency to create brainwave entrainment effects.'
+    },
+    {
+      q: 'Is 432 Hz sound free to use?',
+      a: 'Yes! Our platform is completely free. Create and download unlimited 432 Hz sound frequency files without registration or payment.'
+    },
+    {
+      q: 'Can 432 Hz frequency help with sleep?',
+      a: 'Many people use 432 Hz sound for sleep aid. Our Delta Wave preset combines 432 Hz frequency with 2 Hz binaural beats specifically designed for deep, restful sleep.'
+    },
+    {
+      q: 'Is 432 Hz safe to listen to?',
+      a: 'Yes, 432 Hz sound frequency is safe at reasonable volumes. Start with lower volumes and take breaks if needed. Consult a doctor if you have hearing sensitivity or medical conditions.'
+    }
+  ];
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-50 via-white to-pink-50 dark:from-gray-900 dark:via-gray-800 dark:to-purple-900">
       {/* Hero Section */}
@@ -24,20 +51,20 @@ export default function Home() {
               </span>
             </h1>
             <p className="mx-auto mb-8 max-w-3xl text-lg text-gray-600 dark:text-gray-300 sm:text-xl">
-              Create and download pure 432 Hz sound frequency instantly. Our free 432 Hz sound platform creates healing frequencies perfect for meditation, relaxation, and sound healing. Experience the natural 432 Hz sound frequency of the universe.
+              Create and download pure 432 Hz sound frequency instantly. Our free platform creates 432 Hz sound perfect for meditation, relaxation, and sound healing. Experience the natural 432 Hz sound frequency.
             </p>
             <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
               <Link
                 href="#audio"
                 className="rounded-full bg-gradient-to-r from-purple-600 to-pink-600 px-8 py-3 text-lg font-semibold text-white shadow-lg hover:from-purple-700 hover:to-pink-700"
               >
-                Create 432 Hz Audio Now
+                Create 432 Hz Sound Now
               </Link>
               <Link
-                href="/about"
+                href="#about"
                 className="rounded-full border-2 border-purple-600 px-8 py-3 text-lg font-semibold text-purple-600 hover:bg-purple-50 dark:border-purple-400 dark:text-purple-400 dark:hover:bg-gray-800"
               >
-                Learn About 432 Hz
+                Learn More
               </Link>
             </div>
           </div>
@@ -51,7 +78,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Information Section */}
+      {/* Benefits Section */}
       <section className="px-4 py-16">
         <div className="mx-auto max-w-7xl">
           <div className="rounded-3xl bg-white p-8 shadow-xl dark:bg-gray-800 md:p-12">
@@ -62,9 +89,9 @@ export default function Home() {
             <div className="grid gap-8 md:grid-cols-3">
               <div className="text-center">
                 <div className="mb-4 text-5xl">🎵</div>
-                <h3 className="mb-3 text-xl font-bold text-gray-900 dark:text-white">Pure 432 Hz Frequency</h3>
+                <h3 className="mb-3 text-xl font-bold text-gray-900 dark:text-white">Pure 432 Hz</h3>
                 <p className="text-gray-600 dark:text-gray-300">
-                  Our platform produces scientifically accurate 432 Hz sound using advanced Web Audio API. Create pure 432 Hz sound frequency sine waves or complex waveforms for optimal sound healing results.
+                  Create scientifically accurate 432 Hz sound using Web Audio API. Pure 432 Hz sound frequency sine waves and complex waveforms for optimal results.
                 </p>
               </div>
 
@@ -72,15 +99,15 @@ export default function Home() {
                 <div className="mb-4 text-5xl">🧘</div>
                 <h3 className="mb-3 text-xl font-bold text-gray-900 dark:text-white">Perfect for Meditation</h3>
                 <p className="text-gray-600 dark:text-gray-300">
-                  432 Hz sound is widely used for meditation and relaxation. The 432 Hz frequency resonates with natural patterns and promotes deeper meditation states. Create custom 432 Hz sound frequency meditation audio.
+                  432 Hz sound is ideal for meditation and relaxation. The 432 Hz frequency resonates with natural patterns and promotes deeper meditation states.
                 </p>
               </div>
 
               <div className="text-center">
                 <div className="mb-4 text-5xl">🔊</div>
-                <h3 className="mb-3 text-xl font-bold text-gray-900 dark:text-white">Multiple Formats</h3>
+                <h3 className="mb-3 text-xl font-bold text-gray-900 dark:text-white">High Quality</h3>
                 <p className="text-gray-600 dark:text-gray-300">
-                  Download your 432 Hz sound in high-quality WAV format (24-bit) or compressed MP3 (320kbps). Our platform supports various durations from 5 to 60 minutes for all your 432 Hz sound frequency needs.
+                  Download 432 Hz sound in WAV (24-bit) or MP3 (320kbps) format. Supports durations from 5 to 60 minutes for all your 432 Hz sound frequency needs.
                 </p>
               </div>
             </div>
@@ -88,19 +115,39 @@ export default function Home() {
         </div>
       </section>
 
-      {/* What is 432 Hz Section */}
-      <section className="bg-gradient-to-r from-purple-600 to-pink-600 px-4 py-16 text-white">
+      {/* About 432 Hz Section */}
+      <section id="about" className="bg-gradient-to-r from-purple-600 to-pink-600 px-4 py-16 text-white">
         <div className="mx-auto max-w-4xl">
-          <h2 className="mb-6 text-center text-3xl font-bold md:text-4xl">What is 432 Hz Sound Frequency?</h2>
-          <p className="mb-6 text-lg leading-relaxed">
-            The 432 Hz sound frequency is an alternative tuning standard to the conventional 440 Hz. Proponents of 432 Hz claim this frequency is more harmonious and natural, aligning with mathematical patterns found in nature. Our platform allows you to experience 432 Hz sound frequency firsthand.
-          </p>
-          <p className="mb-6 text-lg leading-relaxed">
-            Many people use 432 Hz sound for meditation, yoga, relaxation, and sound healing practices. The 432 Hz frequency is sometimes called the "natural frequency of the universe" or "Verdi's A" after composer Giuseppe Verdi who advocated for this tuning. Create your own 432 Hz sound frequency audio instantly.
-          </p>
-          <p className="text-lg leading-relaxed">
-            While scientific evidence for specific therapeutic benefits of 432 Hz is limited, many users report subjective improvements in relaxation, focus, and well-being when listening to 432 Hz sound. Our platform provides an easy way to explore these potential benefits yourself.
-          </p>
+          <h2 className="mb-8 text-center text-3xl font-bold md:text-4xl">Understanding 432 Hz Sound Frequency</h2>
+
+          <div className="space-y-6 text-lg leading-relaxed">
+            <div>
+              <h3 className="mb-3 text-2xl font-bold">What is 432 Hz?</h3>
+              <p>
+                The 432 Hz sound frequency is an alternative tuning standard to the conventional 440 Hz. In 432 Hz tuning, the note A vibrates at 432 cycles per second. Proponents believe 432 Hz is more harmonious and naturally aligned with the universe and human body.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="mb-3 text-2xl font-bold">Benefits of 432 Hz Sound</h3>
+              <p>
+                Many people use 432 Hz sound for meditation, yoga, relaxation, and sound healing. The 432 Hz frequency is called the "natural frequency of the universe" or "Verdi's A" after composer Giuseppe Verdi. Users report that 432 Hz sound frequency promotes relaxation, reduces stress, and enhances meditation experiences.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="mb-3 text-2xl font-bold">How to Use 432 Hz</h3>
+              <p>
+                Use 432 Hz sound during meditation (10-20 minutes), yoga practice, or as a sleep aid (30-60 minutes). For binaural beats at 432 Hz frequency, use headphones to ensure each ear receives the correct frequency. Start with lower volumes and shorter durations.
+              </p>
+            </div>
+
+            <div className="rounded-xl bg-white/10 p-6">
+              <p className="text-sm">
+                <strong>⚠️ Disclaimer:</strong> 432 Hz sound is for personal wellness exploration only. Claims about therapeutic benefits are not scientifically proven. 432 Hz frequency is not a substitute for professional medical treatment.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -115,14 +162,14 @@ export default function Home() {
             <div className="rounded-2xl bg-white p-6 shadow-lg dark:bg-gray-800">
               <h3 className="mb-3 text-lg font-bold text-gray-900 dark:text-white">✨ Instant Creation</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Create 432 Hz sound instantly in your browser. Our platform runs entirely client-side, ensuring fast creation and complete privacy for your 432 Hz sound frequency.
+                Create 432 Hz sound instantly in your browser. All 432 Hz sound frequency creation runs client-side for fast performance and complete privacy.
               </p>
             </div>
 
             <div className="rounded-2xl bg-white p-6 shadow-lg dark:bg-gray-800">
               <h3 className="mb-3 text-lg font-bold text-gray-900 dark:text-white">🎧 Binaural Beats</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Create 432 Hz binaural beats for enhanced meditation. Combine 432 Hz frequency with Delta, Theta, Alpha, or Beta brainwave frequencies.
+                Create 432 Hz binaural beats for meditation. Combine 432 Hz frequency with Delta, Theta, Alpha, or Beta brainwave frequencies.
               </p>
             </div>
 
@@ -134,25 +181,50 @@ export default function Home() {
             </div>
 
             <div className="rounded-2xl bg-white p-6 shadow-lg dark:bg-gray-800">
-              <h3 className="mb-3 text-lg font-bold text-gray-900 dark:text-white">💾 High Quality Export</h3>
+              <h3 className="mb-3 text-lg font-bold text-gray-900 dark:text-white">💾 High Quality</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Download 432 Hz sound in professional quality WAV (24-bit, 48kHz) or MP3 (320kbps) formats for any device.
+                Download 432 Hz sound in professional WAV (24-bit, 48kHz) or MP3 (320kbps) formats for any device.
               </p>
             </div>
 
             <div className="rounded-2xl bg-white p-6 shadow-lg dark:bg-gray-800">
               <h3 className="mb-3 text-lg font-bold text-gray-900 dark:text-white">⚡ Multiple Waveforms</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Choose from sine, square, triangle, or sawtooth waveforms for your 432 Hz sound frequency. Each waveform offers unique sonic characteristics.
+                Choose sine, square, triangle, or sawtooth waveforms for your 432 Hz sound frequency. Each offers unique sonic characteristics.
               </p>
             </div>
 
             <div className="rounded-2xl bg-white p-6 shadow-lg dark:bg-gray-800">
-              <h3 className="mb-3 text-lg font-bold text-gray-900 dark:text-white">🎛️ Customizable Duration</h3>
+              <h3 className="mb-3 text-lg font-bold text-gray-900 dark:text-white">🎛️ Custom Duration</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Create 432 Hz sound from 5 to 60 minutes in length. Perfect for short meditation sessions or extended relaxation periods.
+                Create 432 Hz sound from 5 to 60 minutes. Perfect for meditation sessions or extended relaxation.
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="bg-gray-50 px-4 py-16 dark:bg-gray-800/50">
+        <div className="mx-auto max-w-4xl">
+          <h2 className="mb-12 text-center text-3xl font-bold text-gray-900 dark:text-white md:text-4xl">
+            432 Hz Frequently Asked Questions
+          </h2>
+
+          <div className="space-y-6">
+            {faqs.map((faq, index) => (
+              <div
+                key={index}
+                className="rounded-2xl bg-white p-6 shadow-lg dark:bg-gray-800"
+              >
+                <h3 className="mb-3 text-xl font-bold text-gray-900 dark:text-white">
+                  {faq.q}
+                </h3>
+                <p className="text-gray-700 dark:text-gray-300">
+                  {faq.a}
+                </p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -162,13 +234,13 @@ export default function Home() {
         <div className="mx-auto max-w-4xl rounded-3xl bg-gradient-to-r from-purple-600 to-pink-600 p-8 text-center text-white shadow-2xl md:p-12">
           <h2 className="mb-4 text-3xl font-bold md:text-4xl">Start Creating 432 Hz Sound Today</h2>
           <p className="mb-8 text-lg">
-            Experience the healing 432 Hz sound frequency with our free online platform. No registration, no fees, just pure 432 Hz at your fingertips.
+            Experience the healing 432 Hz sound frequency with our free platform. No registration, no fees, just pure 432 Hz at your fingertips.
           </p>
           <Link
             href="#audio"
             className="inline-block rounded-full bg-white px-8 py-3 text-lg font-semibold text-purple-600 shadow-lg hover:bg-gray-100"
           >
-            Create 432 Hz Audio Now
+            Create 432 Hz Sound Now
           </Link>
         </div>
       </section>

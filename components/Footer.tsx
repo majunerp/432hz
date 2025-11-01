@@ -8,26 +8,26 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl px-4 py-12 lg:px-8">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
           <div>
-            <h3 className="text-lg font-semibold text-gray-900 dark:text-white">About 432-hz.org</h3>
+            <h3 className="text-lg font-semibold text-gray-900 dark:text-white">432-hz.org</h3>
             <p className="mt-4 text-sm text-gray-600 dark:text-gray-400">
-              Free online 432 Hz sound platform for meditation, relaxation, and sound healing. Create and download high-quality 432 Hz sound frequency instantly.
+              Free 432 Hz sound platform for meditation, relaxation, and sound healing. Create and download high-quality 432 Hz sound frequency instantly.
             </p>
           </div>
           <div>
             <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Quick Links</h3>
             <ul className="mt-4 space-y-2">
               <li>
-                <Link href="/" className="text-sm text-gray-600 hover:text-purple-600 dark:text-gray-400 dark:hover:text-purple-400">
-                  432 Hz Sound
+                <Link href="#audio" className="text-sm text-gray-600 hover:text-purple-600 dark:text-gray-400 dark:hover:text-purple-400">
+                  Create Audio
                 </Link>
               </li>
               <li>
-                <Link href="/about" className="text-sm text-gray-600 hover:text-purple-600 dark:text-gray-400 dark:hover:text-purple-400">
-                  What is 432 Hz?
+                <Link href="#about" className="text-sm text-gray-600 hover:text-purple-600 dark:text-gray-400 dark:hover:text-purple-400">
+                  About 432 Hz
                 </Link>
               </li>
               <li>
-                <Link href="/faq" className="text-sm text-gray-600 hover:text-purple-600 dark:text-gray-400 dark:hover:text-purple-400">
+                <Link href="#faq" className="text-sm text-gray-600 hover:text-purple-600 dark:text-gray-400 dark:hover:text-purple-400">
                   FAQ
                 </Link>
               </li>
