@@ -4,7 +4,7 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: '432 Hz Sound Frequency - Free Audio Download',
-  description: 'Free 432 Hz sound frequency download for meditation and relaxation. Create pure 432 Hz sound instantly with our platform. Download high-quality 432 Hz audio in WAV or MP3 format. No registration required.',
+  description: 'Free 432 Hz sound frequency for meditation and relaxation. Create pure 432 Hz sound instantly. Download in WAV or MP3 format. No registration required.',
   alternates: {
     canonical: 'https://432-hz.org/',
   },
