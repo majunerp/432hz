@@ -10,7 +10,7 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold text-gray-900 dark:text-white">About 432-hz.org</h3>
             <p className="mt-4 text-sm text-gray-600 dark:text-gray-400">
-              Free online 432 Hz audio generator for meditation, relaxation, and sound healing. Generate and download high-quality 432Hz frequencies instantly.
+              Free online 432 Hz sound platform for meditation, relaxation, and sound healing. Create and download high-quality 432 Hz sound frequency instantly.
             </p>
           </div>
           <div>
@@ -18,7 +18,7 @@ export default function Footer() {
             <ul className="mt-4 space-y-2">
               <li>
                 <Link href="/" className="text-sm text-gray-600 hover:text-purple-600 dark:text-gray-400 dark:hover:text-purple-400">
-                  432 Hz Generator
+                  432 Hz Sound
                 </Link>
               </li>
               <li>

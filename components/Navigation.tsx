@@ -35,7 +35,7 @@ export default function Navigation() {
         </div>
         <div className="hidden lg:flex lg:gap-x-8">
           <Link href="/" className="text-sm font-semibold leading-6 text-gray-900 hover:text-purple-600 dark:text-gray-100 dark:hover:text-purple-400">
-            Generator
+            Home
           </Link>
           <Link href="/about" className="text-sm font-semibold leading-6 text-gray-900 hover:text-purple-600 dark:text-gray-100 dark:hover:text-purple-400">
             About 432 Hz
@@ -54,7 +54,7 @@ export default function Navigation() {
               className="block rounded-md px-3 py-2 text-base font-medium text-gray-900 hover:bg-gray-50 dark:text-gray-100 dark:hover:bg-gray-800"
               onClick={() => setMobileMenuOpen(false)}
             >
-              Generator
+              Home
             </Link>
             <Link
               href="/about"

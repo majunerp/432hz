@@ -113,7 +113,7 @@ export default function AboutPage() {
               href="/"
               className="inline-block rounded-full bg-gradient-to-r from-purple-600 to-pink-600 px-8 py-3 text-lg font-semibold text-white shadow-lg hover:from-purple-700 hover:to-pink-700"
             >
-              Try Our 432 Hz Generator
+              Create 432 Hz Sound Now
             </Link>
           </div>
         </article>
