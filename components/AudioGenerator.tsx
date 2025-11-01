@@ -46,14 +46,48 @@ export default function AudioGenerator() {
   };
 
   const handlePlay = async () => {
-    if (!audioBuffer) return;
-
     const engine = audioEngineRef.current;
 
+    // If already playing, just pause
     if (isPlaying) {
       engine.stop();
       setIsPlaying(false);
+      return;
+    }
+
+    // If no audio buffer, generate first
+    if (!audioBuffer) {
+      setIsGenerating(true);
+      setProgress(0);
+
+      try {
+        await engine.init();
+
+        const config = { ...selectedPreset.config, duration };
+
+        let buffer: AudioBuffer;
+        if ('beatFrequency' in config) {
+          buffer = await engine.generateBinauralBeats(config as BinauralConfig);
+        } else {
+          buffer = await engine.generateTone(config as AudioConfig);
+        }
+
+        setAudioBuffer(buffer);
+        setProgress(100);
+
+        // Play the newly generated audio
+        await engine.playBuffer(buffer, () => {
+          setIsPlaying(false);
+        });
+        setIsPlaying(true);
+      } catch (error) {
+        console.error('Error generating audio:', error);
+        alert('Failed to generate audio. Please try again.');
+      } finally {
+        setIsGenerating(false);
+      }
     } else {
+      // Play existing buffer
       await engine.playBuffer(audioBuffer, () => {
         setIsPlaying(false);
       });
@@ -160,42 +194,30 @@ export default function AudioGenerator() {
             </div>
           </div>
 
-          {/* Generate Button */}
-          <div className="rounded-2xl bg-white/90 p-6 shadow-xl backdrop-blur-lg dark:bg-gray-800/90">
-            <button
-              onClick={handleGenerate}
-              disabled={isGenerating}
-              className="w-full transform rounded-xl bg-gradient-to-r from-green-500 to-emerald-500 px-6 py-4 text-lg font-bold text-white shadow-lg transition-all duration-200 hover:scale-105 hover:from-green-600 hover:to-emerald-600 hover:shadow-xl disabled:opacity-50 disabled:hover:scale-100"
-            >
-              {isGenerating ? '⏳ Generating...' : '✨ Generate 432 Hz Audio'}
-            </button>
-            {isGenerating && (
-              <div className="mt-4">
-                <div className="h-2 w-full overflow-hidden rounded-full bg-gray-200 dark:bg-gray-700">
-                  <div
-                    className="h-full bg-gradient-to-r from-purple-500 to-pink-500 transition-all duration-300"
-                    style={{ width: `${progress}%` }}
-                  />
-                </div>
-              </div>
-            )}
-          </div>
-
           {/* Playback Controls */}
-          {audioBuffer && (
-            <div className="rounded-2xl bg-white/90 p-6 shadow-xl backdrop-blur-lg dark:bg-gray-800/90">
-              <h3 className="mb-4 text-xl font-bold text-gray-900 dark:text-white">Playback</h3>
-              <div className="space-y-3">
-                <button
-                  onClick={handlePlay}
-                  className="w-full rounded-xl bg-purple-500 px-6 py-3 font-bold text-white hover:bg-purple-600"
-                >
-                  {isPlaying ? '⏸️ Pause' : '▶️ Play'}
-                </button>
-                <WaveformVisualizer audioEngine={audioEngineRef.current} isPlaying={isPlaying} />
-              </div>
+          <div className="rounded-2xl bg-white/90 p-6 shadow-xl backdrop-blur-lg dark:bg-gray-800/90">
+            <h3 className="mb-4 text-xl font-bold text-gray-900 dark:text-white">Playback</h3>
+            <div className="space-y-3">
+              <button
+                onClick={handlePlay}
+                disabled={isGenerating}
+                className="w-full rounded-xl bg-purple-500 px-6 py-3 font-bold text-white hover:bg-purple-600 disabled:opacity-50"
+              >
+                {isGenerating ? '⏳ Generating...' : isPlaying ? '⏸️ Pause' : '▶️ Play'}
+              </button>
+              {isGenerating && (
+                <div className="mt-2">
+                  <div className="h-2 w-full overflow-hidden rounded-full bg-gray-200 dark:bg-gray-700">
+                    <div
+                      className="h-full bg-gradient-to-r from-purple-500 to-pink-500 transition-all duration-300"
+                      style={{ width: `${progress}%` }}
+                    />
+                  </div>
+                </div>
+              )}
+              {audioBuffer && <WaveformVisualizer audioEngine={audioEngineRef.current} isPlaying={isPlaying} />}
             </div>
-          )}
+          </div>
 
           {/* Download Buttons */}
           {audioBuffer && (
