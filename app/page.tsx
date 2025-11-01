@@ -14,14 +14,11 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-50 via-white to-pink-50 dark:from-gray-900 dark:via-gray-800 dark:to-purple-900">
       {/* Hero Section */}
-      <section className="relative overflow-hidden px-4 py-16 md:py-24">
+      <section className="relative overflow-hidden px-4 py-12 md:py-20">
         <div className="mx-auto max-w-7xl">
           <div className="text-center">
-            <h1 className="mb-6 text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white sm:text-5xl md:text-6xl">
-              <span className="block">Free 432 Hz Sound Frequency</span>
-              <span className="block bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
-                Create Healing Audio
-              </span>
+            <h1 className="mb-4 text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white sm:text-5xl md:text-6xl">
+              Free 432 Hz Sound Frequency
             </h1>
             <p className="mx-auto mb-8 max-w-3xl text-lg text-gray-600 dark:text-gray-300 sm:text-xl">
               Create and download pure 432 Hz sound frequency instantly. Our free platform creates 432 Hz sound perfect for meditation, relaxation, and sound healing. Experience the natural 432 Hz sound frequency.
