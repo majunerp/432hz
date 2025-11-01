@@ -121,34 +121,34 @@ export default function AudioGenerator() {
 
   return (
     <div className="w-full">
-      <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
+      <div className="grid grid-cols-1 gap-6 lg:grid-cols-[2fr,1fr]">
         {/* Left: Preset Selection */}
-        <div className="lg:col-span-2">
-          <div className="rounded-2xl bg-white/90 p-6 shadow-xl backdrop-blur-lg dark:bg-gray-800/90">
-            <h2 className="mb-4 text-2xl font-bold text-gray-900 dark:text-white">Choose Your 432 Hz Sound</h2>
-            <div className="grid max-h-[600px] gap-3 overflow-y-auto pr-2 sm:grid-cols-2">
+        <div>
+          <div className="rounded-2xl bg-white/90 p-8 shadow-xl backdrop-blur-lg dark:bg-gray-800/90">
+            <h2 className="mb-6 text-2xl font-bold text-gray-900 dark:text-white">Choose Your 432 Hz Sound</h2>
+            <div className="grid max-h-[700px] gap-4 overflow-y-auto pr-2 sm:grid-cols-2">
               {AUDIO_PRESETS.map((preset) => (
                 <button
                   key={preset.id}
                   onClick={() => setSelectedPreset(preset)}
-                  className={`rounded-xl p-4 text-left transition-all duration-200 ${
+                  className={`rounded-xl p-5 text-left transition-all duration-200 ${
                     selectedPreset.id === preset.id
                       ? 'scale-105 bg-gradient-to-r from-purple-500 to-pink-500 shadow-lg'
                       : 'bg-white/50 hover:bg-white/80 dark:bg-gray-700/50 dark:hover:bg-gray-700/80'
                   }`}
                 >
                   <div className="flex items-start gap-3">
-                    <span className="text-3xl">{preset.icon}</span>
+                    <span className="text-4xl">{preset.icon}</span>
                     <div className="flex-1">
                       <h3
-                        className={`mb-1 text-sm font-semibold ${
+                        className={`mb-2 text-base font-bold ${
                           selectedPreset.id === preset.id ? 'text-white' : 'text-gray-900 dark:text-white'
                         }`}
                       >
                         {preset.name}
                       </h3>
                       <p
-                        className={`text-xs leading-relaxed ${
+                        className={`text-sm leading-relaxed ${
                           selectedPreset.id === preset.id ? 'text-purple-100' : 'text-gray-600 dark:text-gray-400'
                         }`}
                       >
@@ -163,14 +163,14 @@ export default function AudioGenerator() {
         </div>
 
         {/* Right: Controls */}
-        <div className="space-y-6">
+        <div className="space-y-4">
           {/* Duration Control */}
           <div className="rounded-2xl bg-white/90 p-6 shadow-xl backdrop-blur-lg dark:bg-gray-800/90">
             <h3 className="mb-4 text-xl font-bold text-gray-900 dark:text-white">Duration</h3>
-            <div className="mb-4">
-              <div className="mb-2 flex items-center justify-between">
+            <div className="mb-3">
+              <div className="mb-3 flex items-center justify-between">
                 <span className="text-sm text-gray-600 dark:text-gray-400">Length:</span>
-                <span className="text-2xl font-bold text-gray-900 dark:text-white">
+                <span className="text-3xl font-bold text-gray-900 dark:text-white">
                   {duration / 60} min
                 </span>
               </div>
@@ -183,13 +183,13 @@ export default function AudioGenerator() {
                 onChange={(e) => setDuration(parseInt(e.target.value))}
                 className="h-2 w-full cursor-pointer appearance-none rounded-lg bg-gray-200 accent-purple-500 dark:bg-gray-700"
               />
-              <div className="mt-1 flex justify-between text-xs text-gray-500 dark:text-gray-400">
+              <div className="mt-2 flex justify-between text-xs text-gray-500 dark:text-gray-400">
                 {DURATION_OPTIONS.map((opt) => (
                   <span key={opt.value}>{opt.label}</span>
                 ))}
               </div>
             </div>
-            <div className="rounded-lg bg-purple-50 p-3 text-xs text-purple-900 dark:bg-purple-900/20 dark:text-purple-200">
+            <div className="rounded-lg bg-purple-50 p-3 text-sm text-purple-900 dark:bg-purple-900/20 dark:text-purple-200">
               <p>📊 Estimated file size: {fileSize.display}</p>
             </div>
           </div>
@@ -201,7 +201,7 @@ export default function AudioGenerator() {
               <button
                 onClick={handlePlay}
                 disabled={isGenerating}
-                className="w-full rounded-xl bg-purple-500 px-6 py-3 font-bold text-white hover:bg-purple-600 disabled:opacity-50"
+                className="w-full rounded-xl bg-purple-500 px-6 py-4 text-lg font-bold text-white transition-all hover:bg-purple-600 disabled:opacity-50"
               >
                 {isGenerating ? '⏳ Generating...' : isPlaying ? '⏸️ Pause' : '▶️ Play'}
               </button>
@@ -223,16 +223,16 @@ export default function AudioGenerator() {
           {audioBuffer && (
             <div className="rounded-2xl bg-white/90 p-6 shadow-xl backdrop-blur-lg dark:bg-gray-800/90">
               <h3 className="mb-4 text-xl font-bold text-gray-900 dark:text-white">Download</h3>
-              <div className="space-y-2">
+              <div className="space-y-3">
                 <button
                   onClick={() => handleDownload('wav')}
-                  className="w-full rounded-xl border-2 border-purple-500 bg-white px-6 py-3 font-bold text-purple-500 hover:bg-purple-50 dark:bg-gray-800 dark:hover:bg-gray-700"
+                  className="w-full rounded-xl border-2 border-purple-500 bg-white px-6 py-3 font-bold text-purple-500 transition-all hover:bg-purple-50 dark:bg-gray-800 dark:hover:bg-gray-700"
                 >
                   💾 Download WAV (24-bit)
                 </button>
                 <button
                   onClick={() => handleDownload('mp3')}
-                  className="w-full rounded-xl border-2 border-purple-500 bg-white px-6 py-3 font-bold text-purple-500 hover:bg-purple-50 dark:bg-gray-800 dark:hover:bg-gray-700"
+                  className="w-full rounded-xl border-2 border-purple-500 bg-white px-6 py-3 font-bold text-purple-500 transition-all hover:bg-purple-50 dark:bg-gray-800 dark:hover:bg-gray-700"
                 >
                   💾 Download MP3 (320kbps)
                 </button>
@@ -242,7 +242,7 @@ export default function AudioGenerator() {
 
           {/* Pro Tips */}
           <div className="rounded-2xl bg-white/90 p-6 shadow-xl backdrop-blur-lg dark:bg-gray-800/90">
-            <h4 className="mb-2 flex items-center gap-2 font-bold text-gray-900 dark:text-white">
+            <h4 className="mb-3 flex items-center gap-2 text-lg font-bold text-gray-900 dark:text-white">
               <span>💡</span> Pro Tips
             </h4>
             <ul className="space-y-2 text-sm text-gray-600 dark:text-gray-400">
@@ -250,7 +250,6 @@ export default function AudioGenerator() {
               <li>• Find a quiet, comfortable space</li>
               <li>• Start with lower volumes</li>
               <li>• Combine with breathing exercises</li>
-              <li>• All audio generated in your browser</li>
             </ul>
           </div>
         </div>
