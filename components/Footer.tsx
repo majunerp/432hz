@@ -26,11 +26,6 @@ export default function Footer() {
                   About 432 Hz
                 </Link>
               </li>
-              <li>
-                <Link href="#faq" className="text-sm text-gray-600 hover:text-purple-600 dark:text-gray-400 dark:hover:text-purple-400">
-                  FAQ
-                </Link>
-              </li>
             </ul>
           </div>
           <div>

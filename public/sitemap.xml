@@ -4,28 +4,11 @@
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
-  <!-- Homepage - 432 Hz Generator -->
+  <!-- Homepage - 432 Hz Sound Frequency -->
   <url>
     <loc>https://432-hz.org/</loc>
     <lastmod>2025-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
-
-  <!-- About Page - What is 432 Hz -->
-  <url>
-    <loc>https://432-hz.org/about</loc>
-    <lastmod>2025-01-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- FAQ Page -->
-  <url>
-    <loc>https://432-hz.org/faq</loc>
-    <lastmod>2025-01-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
 </urlset>

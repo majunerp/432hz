@@ -4,10 +4,3 @@ Allow: /
 
 # Sitemaps
 Sitemap: https://432-hz.org/sitemap.xml
-
-# Crawl-delay (optional)
-Crawl-delay: 0
-
-# Disallow admin or private areas (if any in future)
-# Disallow: /admin/
-# Disallow: /api/

@@ -40,9 +40,6 @@ export default function Navigation() {
           <Link href="#about" className="text-sm font-semibold leading-6 text-gray-900 hover:text-purple-600 dark:text-gray-100 dark:hover:text-purple-400">
             About
           </Link>
-          <Link href="#faq" className="text-sm font-semibold leading-6 text-gray-900 hover:text-purple-600 dark:text-gray-100 dark:hover:text-purple-400">
-            FAQ
-          </Link>
         </div>
       </nav>
       {/* Mobile menu */}
@@ -62,13 +59,6 @@ export default function Navigation() {
               onClick={() => setMobileMenuOpen(false)}
             >
               About
-            </Link>
-            <Link
-              href="#faq"
-              className="block rounded-md px-3 py-2 text-base font-medium text-gray-900 hover:bg-gray-50 dark:text-gray-100 dark:hover:bg-gray-800"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              FAQ
             </Link>
           </div>
         </div>

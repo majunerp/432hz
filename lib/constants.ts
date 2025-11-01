@@ -102,7 +102,7 @@ export const DURATION_OPTIONS = [
 // SEO Keywords
 export const SITE_NAME = '432-hz.org';
 export const SITE_TITLE = '432 Hz Sound Frequency - Free Audio Download';
-export const SITE_DESCRIPTION = 'Free 432 Hz sound frequency download. Create pure 432 Hz sound for meditation, relaxation, and sound healing. No registration required.';
+export const SITE_DESCRIPTION = 'Free 432 Hz sound frequency download for meditation and relaxation. Create pure 432 Hz sound instantly with our platform. Download high-quality 432 Hz audio in WAV or MP3 format. No registration required.';
 export const SITE_URL = 'https://432-hz.org';
 
 // Keywords for SEO (density 3-5%)

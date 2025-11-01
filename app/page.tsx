@@ -4,40 +4,13 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: '432 Hz Sound Frequency - Free Audio Download',
-  description: 'Free 432 Hz sound frequency download. Create pure 432 Hz sound for meditation, relaxation, and sound healing. No registration required.',
+  description: 'Free 432 Hz sound frequency download for meditation and relaxation. Create pure 432 Hz sound instantly with our platform. Download high-quality 432 Hz audio in WAV or MP3 format. No registration required.',
   alternates: {
     canonical: 'https://432-hz.org/',
   },
 };
 
 export default function Home() {
-  const faqs = [
-    {
-      q: 'What is 432 Hz sound frequency?',
-      a: '432 Hz is an alternative musical tuning where the note A vibrates at 432 cycles per second, compared to the standard 440 Hz. Many believe 432 Hz sound frequency is more harmonious with natural patterns.'
-    },
-    {
-      q: 'How do I create 432 Hz sound?',
-      a: 'Select your preferred preset, choose duration (5-60 minutes), click Play to create 432 Hz sound instantly, then download in WAV or MP3 format. All creation happens in your browser.'
-    },
-    {
-      q: 'What are binaural beats at 432 Hz?',
-      a: 'Binaural beats combine 432 Hz sound frequency with Delta, Theta, Alpha, or Beta frequencies. Using headphones, each ear receives a different frequency to create brainwave entrainment effects.'
-    },
-    {
-      q: 'Is 432 Hz sound free to use?',
-      a: 'Yes! Our platform is completely free. Create and download unlimited 432 Hz sound frequency files without registration or payment.'
-    },
-    {
-      q: 'Can 432 Hz frequency help with sleep?',
-      a: 'Many people use 432 Hz sound for sleep aid. Our Delta Wave preset combines 432 Hz frequency with 2 Hz binaural beats specifically designed for deep, restful sleep.'
-    },
-    {
-      q: 'Is 432 Hz safe to listen to?',
-      a: 'Yes, 432 Hz sound frequency is safe at reasonable volumes. Start with lower volumes and take breaks if needed. Consult a doctor if you have hearing sensitivity or medical conditions.'
-    }
-  ];
-
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-50 via-white to-pink-50 dark:from-gray-900 dark:via-gray-800 dark:to-purple-900">
       {/* Hero Section */}
@@ -200,31 +173,6 @@ export default function Home() {
                 Create 432 Hz sound from 5 to 60 minutes. Perfect for meditation sessions or extended relaxation.
               </p>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* FAQ Section */}
-      <section className="bg-gray-50 px-4 py-16 dark:bg-gray-800/50">
-        <div className="mx-auto max-w-4xl">
-          <h2 className="mb-12 text-center text-3xl font-bold text-gray-900 dark:text-white md:text-4xl">
-            432 Hz Frequently Asked Questions
-          </h2>
-
-          <div className="space-y-6">
-            {faqs.map((faq, index) => (
-              <div
-                key={index}
-                className="rounded-2xl bg-white p-6 shadow-lg dark:bg-gray-800"
-              >
-                <h3 className="mb-3 text-xl font-bold text-gray-900 dark:text-white">
-                  {faq.q}
-                </h3>
-                <p className="text-gray-700 dark:text-gray-300">
-                  {faq.a}
-                </p>
-              </div>
-            ))}
           </div>
         </div>
       </section>
