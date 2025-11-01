@@ -20,7 +20,8 @@ export const metadata: Metadata = {
   description: SITE_DESCRIPTION,
   keywords: [
     "432 Hz",
-    "432Hz generator",
+    "432 Hz sound",
+    "432 Hz sound frequency",
     "432 Hz audio",
     "432Hz frequency",
     "432Hz download",
@@ -29,7 +30,6 @@ export const metadata: Metadata = {
     "sound healing",
     "binaural beats",
     "natural frequency",
-    "432Hz sound",
     "relaxation music",
     "432Hz meditation",
   ],

@@ -101,8 +101,8 @@ export const DURATION_OPTIONS = [
 
 // SEO Keywords
 export const SITE_NAME = '432-hz.org';
-export const SITE_TITLE = '432 Hz Sound Generator - Free Audio Download for Meditation';
-export const SITE_DESCRIPTION = 'Generate and download pure 432 Hz healing frequencies instantly. Free online 432Hz audio generator for meditation, relaxation, and sound healing. No registration required.';
+export const SITE_TITLE = '432 Hz Sound Frequency - Free Audio Download';
+export const SITE_DESCRIPTION = 'Free 432 Hz sound frequency download. Create pure 432 Hz sound for meditation, relaxation, and sound healing. No registration required.';
 export const SITE_URL = 'https://432-hz.org';
 
 // Keywords for SEO (density 3-5%)
@@ -110,7 +110,8 @@ export const PRIMARY_KEYWORDS = [
   '432 Hz',
   '432Hz audio',
   '432 Hz frequency',
-  '432Hz generator',
+  '432 Hz sound',
+  '432 Hz sound frequency',
   '432Hz download',
 ];
 
@@ -121,5 +122,4 @@ export const SECONDARY_KEYWORDS = [
   'binaural beats',
   'natural frequency',
   'relaxation music',
-  '432Hz sound',
 ];
