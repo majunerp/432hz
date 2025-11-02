@@ -26,6 +26,11 @@ export default function Footer() {
                   About 432 Hz
                 </Link>
               </li>
+              <li className="pt-2">
+                <p className="text-sm text-gray-600 dark:text-gray-400">
+                  Contact: <a href="mailto:support@soflo-wheelie-life.com" className="hover:text-purple-600 dark:hover:text-purple-400">support@soflo-wheelie-life.com</a>
+                </p>
+              </li>
             </ul>
           </div>
           <div>
