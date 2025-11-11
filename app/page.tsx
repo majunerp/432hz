@@ -189,6 +189,97 @@ export default function Home() {
           </Link>
         </div>
       </section>
+
+      {/* Internal Links Navigation */}
+      <section className="px-4 py-12">
+        <div className="mx-auto max-w-7xl">
+          <div className="rounded-3xl bg-white p-8 shadow-xl dark:bg-gray-800 md:p-12">
+            <h2 className="mb-8 text-center text-2xl font-bold text-gray-900 dark:text-white md:text-3xl">
+              Explore More About 432 Hz
+            </h2>
+
+            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+              <Link
+                href="/download"
+                className="group rounded-2xl border-2 border-purple-200 p-6 transition-all hover:border-purple-600 hover:shadow-lg dark:border-gray-700 dark:hover:border-purple-400"
+              >
+                <div className="mb-3 text-4xl">💾</div>
+                <h3 className="mb-2 text-xl font-bold text-gray-900 group-hover:text-purple-600 dark:text-white dark:group-hover:text-purple-400">
+                  Download 432 Hz
+                </h3>
+                <p className="text-sm text-gray-600 dark:text-gray-300">
+                  Free 432 Hz audio download in MP3, WAV, and FLAC formats
+                </p>
+              </Link>
+
+              <Link
+                href="/what-is-432-hz"
+                className="group rounded-2xl border-2 border-purple-200 p-6 transition-all hover:border-purple-600 hover:shadow-lg dark:border-gray-700 dark:hover:border-purple-400"
+              >
+                <div className="mb-3 text-4xl">📚</div>
+                <h3 className="mb-2 text-xl font-bold text-gray-900 group-hover:text-purple-600 dark:text-white dark:group-hover:text-purple-400">
+                  What is 432 Hz?
+                </h3>
+                <p className="text-sm text-gray-600 dark:text-gray-300">
+                  Complete guide to understanding 432 Hz frequency
+                </p>
+              </Link>
+
+              <Link
+                href="/benefits"
+                className="group rounded-2xl border-2 border-purple-200 p-6 transition-all hover:border-purple-600 hover:shadow-lg dark:border-gray-700 dark:hover:border-purple-400"
+              >
+                <div className="mb-3 text-4xl">✨</div>
+                <h3 className="mb-2 text-xl font-bold text-gray-900 group-hover:text-purple-600 dark:text-white dark:group-hover:text-purple-400">
+                  432 Hz Benefits
+                </h3>
+                <p className="text-sm text-gray-600 dark:text-gray-300">
+                  Discover the benefits of 432 Hz for meditation and wellness
+                </p>
+              </Link>
+
+              <Link
+                href="/432-vs-440"
+                className="group rounded-2xl border-2 border-purple-200 p-6 transition-all hover:border-purple-600 hover:shadow-lg dark:border-gray-700 dark:hover:border-purple-400"
+              >
+                <div className="mb-3 text-4xl">⚖️</div>
+                <h3 className="mb-2 text-xl font-bold text-gray-900 group-hover:text-purple-600 dark:text-white dark:group-hover:text-purple-400">
+                  432 Hz vs 440 Hz
+                </h3>
+                <p className="text-sm text-gray-600 dark:text-gray-300">
+                  Compare 432 Hz and 440 Hz tuning standards
+                </p>
+              </Link>
+
+              <Link
+                href="/healing"
+                className="group rounded-2xl border-2 border-purple-200 p-6 transition-all hover:border-purple-600 hover:shadow-lg dark:border-gray-700 dark:hover:border-purple-400"
+              >
+                <div className="mb-3 text-4xl">🎵</div>
+                <h3 className="mb-2 text-xl font-bold text-gray-900 group-hover:text-purple-600 dark:text-white dark:group-hover:text-purple-400">
+                  432 Hz Healing
+                </h3>
+                <p className="text-sm text-gray-600 dark:text-gray-300">
+                  Learn about sound healing with 432 Hz frequency
+                </p>
+              </Link>
+
+              <Link
+                href="/music"
+                className="group rounded-2xl border-2 border-purple-200 p-6 transition-all hover:border-purple-600 hover:shadow-lg dark:border-gray-700 dark:hover:border-purple-400"
+              >
+                <div className="mb-3 text-4xl">🎼</div>
+                <h3 className="mb-2 text-xl font-bold text-gray-900 group-hover:text-purple-600 dark:text-white dark:group-hover:text-purple-400">
+                  432 Hz Music
+                </h3>
+                <p className="text-sm text-gray-600 dark:text-gray-300">
+                  Explore 432 Hz music, artists, and where to find songs
+                </p>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
