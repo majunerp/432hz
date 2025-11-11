@@ -2,8 +2,8 @@ import Link from 'next/link';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: '432 Hz vs 440 Hz - Complete Comparison Guide',
-  description: 'Compare 432 Hz vs 440 Hz tuning standards. Understand the differences, history, and which frequency is right for your needs.',
+  title: '432 Hz vs 440 Hz - Which Frequency is Better?',
+  description: 'Compare 432 Hz vs 440 Hz tuning. Understand key differences, history, sound quality, and which frequency is right for meditation, music, and wellness.',
   alternates: {
     canonical: 'https://432-hz.org/432-vs-440',
   },

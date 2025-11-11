@@ -3,8 +3,8 @@ import AudioGenerator from '@/components/AudioGenerator';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: '432 Hz Sound Frequency - Free Audio Download',
-  description: 'Free 432 Hz sound frequency for meditation and relaxation. Create pure 432 Hz sound instantly. Download in WAV or MP3 format. No registration required.',
+  title: '432 Hz Sound Frequency - Free Download & Generator',
+  description: 'Free 432 Hz sound frequency generator. Create and download 432 Hz audio for meditation instantly. MP3, WAV formats. No registration needed.',
   alternates: {
     canonical: 'https://432-hz.org/',
   },

@@ -3,7 +3,7 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'What is 432 Hz? Complete Guide to 432 Hz Frequency',
-  description: 'Discover what 432 Hz is and why it matters. Learn about 432 Hz frequency, its history, scientific basis, and how it differs from standard 440 Hz tuning.',
+  description: 'Learn what 432 Hz is and why it matters. Complete guide to 432 Hz frequency, history, science, and how 432 Hz differs from standard 440 Hz tuning.',
   alternates: {
     canonical: 'https://432-hz.org/what-is-432-hz',
   },

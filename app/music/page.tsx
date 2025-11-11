@@ -2,8 +2,8 @@ import Link from 'next/link';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: '432 Hz Music - Artists, Songs & Where to Find 432 Hz',
-  description: 'Discover 432 Hz music, artists who use 432 Hz tuning, and where to find songs in 432 Hz frequency. Complete guide to 432 Hz music.',
+  title: '432 Hz Music - Artists, Songs & Complete Guide',
+  description: 'Explore 432 Hz music guide. Discover artists using 432 Hz tuning, where to find 432 Hz songs, and how to create music in 432 Hz frequency tuning.',
   alternates: {
     canonical: 'https://432-hz.org/music',
   },

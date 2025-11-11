@@ -2,8 +2,8 @@ import Link from 'next/link';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: '432 Hz Healing - Sound Healing Guide & Benefits',
-  description: 'Discover how 432 Hz is used in sound healing practices. Learn about frequency healing, therapeutic applications, and how to use 432 Hz for wellness.',
+  title: '432 Hz Healing - Sound Therapy & Wellness Guide',
+  description: 'Discover 432 Hz healing and sound therapy. Learn how to use 432 Hz frequency for wellness, meditation, and therapeutic practices. Complete healing guide.',
   alternates: {
     canonical: 'https://432-hz.org/healing',
   },

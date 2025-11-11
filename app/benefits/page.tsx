@@ -2,8 +2,8 @@ import Link from 'next/link';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: '432 Hz Benefits - Why Use 432 Hz Frequency?',
-  description: 'Discover the benefits of 432 Hz frequency for meditation, relaxation, and wellness. Learn why millions choose 432 Hz for stress relief and sound healing.',
+  title: '432 Hz Benefits - Meditation, Relaxation & Wellness',
+  description: 'Discover 432 Hz benefits for meditation, stress relief, and wellness. Learn why millions use 432 Hz frequency for relaxation and sound healing practices.',
   alternates: {
     canonical: 'https://432-hz.org/benefits',
   },
