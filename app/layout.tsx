@@ -78,9 +78,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <head>
-        <link rel="canonical" href={SITE_URL} />
-      </head>
       <body className={`${inter.variable} font-sans antialiased min-h-screen flex flex-col`}>
         {/* Google Analytics */}
         <Script
